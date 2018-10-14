@@ -1,0 +1,268 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link rel="stylesheet"href="StyleSheet1.css"type="text/css" />
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <script>
+        function red()
+        {
+            document.getElementById('span1').style.color = "white";
+            document.getElementById('p1').style.color = "white";
+            //document.getElementById('button1').style.backgroundColor = "red";
+            
+            }
+
+    </script>
+      <script>
+          function show1() {
+              document.getElementById('btns1').style.display = "block";
+              document.getElementById('btns2').style.display = "none";
+              document.getElementById('btns3').style.display = "none";
+              document.getElementById('btns4').style.display = "none";
+            
+          }
+          function show2() {
+              document.getElementById('btns2').style.display = "block";
+              document.getElementById('btns1').style.display = "none";
+              document.getElementById('btns3').style.display = "none";
+              document.getElementById('btns4').style.display = "none";
+
+          }
+          function show3() {
+              document.getElementById('btns3').style.display = "block";
+              document.getElementById('btns1').style.display = "none";
+              document.getElementById('btns2').style.display = "none";
+              document.getElementById('btns4').style.display = "none";
+
+          }
+          function show4() {
+              document.getElementById('btns4').style.display = "block";
+              document.getElementById('btns1').style.display = "none";
+              document.getElementById('btns2').style.display = "none";
+              document.getElementById('btns3').style.display = "none";
+
+          }
+    </script>
+</head>
+<body>
+<div class="header">
+ <nav class="navbar navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+            <a class="navbar-brand" href="#"><img src="cuisine.png" class="im"/></a>
+        </div>
+        <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"class="link">Business Day / Shift</a></li>
+                <li><div class="dropdown">
+    <button class="dropbtn white bigrounded"type="button">Mode:Takeaway
+    <span class="caret"></span></button>
+    <div class="dropdown-content">
+     <a href="#" class="link">Mode:Takeaway</a>
+      <a href="#"class="link">Mode:order</a>
+      <a href="#"class="link">Mode:Delivery</a>
+    </div>
+  </div>
+                </li>
+                <li><button class="btn2 whitee ">Order Queue</button></li>
+                <li><button class="btn2 whitee ">Admin</button></li>
+                
+            </ul>
+        </div>
+    </div>
+        </nav>
+</div>
+
+    <div class="container1">
+
+  <div class="left1">
+    <label class="lb"> Date: 16/07/2018</label>
+    <label class="lb">   Hour: 12:53:31 PM</label>
+    <label class="lb">  Minimum Charge: 0.00</label>
+      <b class="bold"> Takeaway #100</b>
+      <b style="display:block; margin-left:55px;">Cashier: Ahmed salom</b>
+      <button class="btn3 white bigrounded"> <b>Customer name</b> </button>
+  <div></div>
+      <div class="bar">
+          <label style="margin:10px;margin-left:40px;">Qty</label>
+        <label style="margin:10px;margin-left:90px;">Item</label>
+          <label style="margin:10px;margin-left:90px;">Size</label>
+          <label style="margin:10px;margin-left:40px;">Each</label>
+        <label style="margin:10px;margin-left:40px;">Total</label>
+      </div>
+      <label style="margin-left:170px;margin-top:25px;color:#5f5d5d;">No Items currently in Order </label>
+      <div class="content">
+           <button style="border-radius:50%;margin-left:20px;margin-top:10px;width:40px;height:40px;" class="white2 bigrounded2"><b>+</b></button>
+          <div class="container-fluid">
+              <div class="row">
+                  <div class="col-sm-4">
+          <button class="white3 bigrounded3"style="border-radius:50%;width:75px;height:75px;"><span class="glyphicon glyphicon-flash"style="font-size:35px"></span><p style="font-size:10px;font-weight:bold">Fast Cash</p>
+        </button>
+                      </div>
+                  <div class="col-sm-4">
+          <label class="lb2">Discounts:0.00</label><br />
+           <label class="lb2">Subcharges:0.00</label><br />
+           <label class="lb2">Tax:0.00</label>
+                      </div>
+                  <div class="col-sm-4 ">
+                      <label class="red"> Total:  50.00</label><br />
+                     <label class="black"> Balance Due:  50.00</label>
+                      </div>
+                  </div>
+              </div>
+          <hr />
+           <button id="button1"class="white4 bigrounded4 "style="border-radius:50%;width:90px;height:90px;"><span class="glyphicon glyphicon-remove"style="font-size:35px"id="span1"></span><p style="font-size:10px;font-weight:bold"id="p1">Cancel Order</p>
+        </button>
+           <button id="button2"class="white4 bigrounded4 "style="border-radius:50%;width:90px;height:90px;"><span style="font-size:40px"id="span2"><b>&#37;</b></span><p style="font-size:10px;font-weight:bold;"id="p2">Discount Order</p>
+        </button>
+           <button id="button3"class="white4 bigrounded4 "style="border-radius:50%;width:90px;height:90px;"><span class="glyphicon glyphicon-time"style="font-size:35px"id="span3"></span><p style="font-size:10px;font-weight:bold"id="p3">Hold Order</p>
+        </button>
+           <button id="button4"class="white4 bigrounded4 "style="border-radius:50%;width:90px;height:90px;"><span class="glyphicon glyphicon-usd"style="font-size:35px"id="span4"></span><p style="font-size:10px;font-weight:bold"id="p4">Pay</p>
+        </button>
+      </div>
+ </div>
+        <div class="right">
+           <div class="container">
+	<div class="row" style="margin-top: 5%">
+        <div class="col-md-5">
+              <div class="form-group">
+                <div class="icon md">
+                    <input type="text" placeholder="    Search Item" class="form-control" id="search" />
+                    <label for="Search" class="glyphicon glyphicon-search" style="color:#5f5d5d;margin-top:30px;"></label>
+                </div>
+            </div>
+        </div>
+        </div>
+      
+   <div class="table1">
+          <div class="navbar"style="width:690px;">
+  <div class="dropdown2">
+   <a href="#" class="dropbtn2"style="border-top-left-radius:15px;">Food</a>
+    <div class="dropdown-content2">
+         <div class="navbar"style="width:690px;height:60px;box-shadow:0px 6px 16px 0px rgba(0,0,0,0.2);">
+           <a href="#"class="aa a1"onclick="show1()"><label class="aa">Bread</label></a>
+          <a href="#"class="aa a2"id="two"onclick="show2()"><label class="aa">Pasts</label></a>
+          <a href="#"class="aa a3"id="three"onclick="show3()"><label class="aa">Pizza</label></a>
+           <a href="#"class="aa a4"id="four"onclick="show4()"><label class="aa">Soups</label></a>
+        <a href="#" class="aa a5">
+               <span class="glyphicon glyphicon-align-justify"></span>                       
+                    
+      </a>
+        <hr class="hr1"/>
+       </div>
+         <div id="btns1">
+         <button class="white55" style="border-radius:8px;">Bread</button>
+         <button class="white55" style="border-radius:8px;">Bread</button>
+         <button class="white55" style="border-radius:8px;">Bread</button>
+         <button class="white55" style="border-radius:8px;">Bread</button>
+         <button class="white55" style="border-radius:8px;">Bread</button><br />
+         <button class="white55" style="border-radius:8px;">Bread</button>
+         <button class="white55" style="border-radius:8px;">Bread</button>
+         <button class="white55" style="border-radius:8px;">Bread</button>
+         <button class="white55" style="border-radius:8px;">Bread</button>
+         <button class="white55" style="border-radius:8px;">Bread</button><br />
+         <button class="white55" style="border-radius:8px;">Bread</button>
+         <button class="white55" style="border-radius:8px;">Bread</button>
+         <button class="white55" style="border-radius:8px;">Bread</button>
+         <button class="white55" style="border-radius:8px;">Bread</button>
+         <button class="white55" style="border-radius:8px;">Bread</button><br />
+         <button class="white55" style="border-radius:8px;">Bread</button>
+         <button class="white55" style="border-radius:8px;">Bread</button>
+         <button class="white55" style="border-radius:8px;">Bread</button>
+         <button class="white55" style="border-radius:8px;">Bread</button>
+         <button class="white55" style="border-radius:8px;">Bread</button>
+            </div>
+         <div id="btns2">
+         <button class="white55" style="border-radius:8px;">Pasta</button>
+         <button class="white55" style="border-radius:8px;">Pasta</button>
+         <button class="white55" style="border-radius:8px;">Pasta</button>
+         <button class="white55" style="border-radius:8px;">Pasta</button>
+         <button class="white55" style="border-radius:8px;">Pasta</button><br />
+         <button class="white55" style="border-radius:8px;">Pasta</button>
+         <button class="white55" style="border-radius:8px;">Pasta</button>
+         <button class="white55" style="border-radius:8px;">Pasta</button>
+         <button class="white55" style="border-radius:8px;">Pasta</button>
+         <button class="white55" style="border-radius:8px;">Pasta</button><br />
+         <button class="white55" style="border-radius:8px;">Pasta</button>
+         <button class="white55" style="border-radius:8px;">Pasta</button>
+         <button class="white55" style="border-radius:8px;">Pasta</button>
+         <button class="white55" style="border-radius:8px;">Pasta</button>
+         <button class="white55" style="border-radius:8px;">Pasta</button><br />
+         <button class="white55" style="border-radius:8px;">Pasta</button>
+         <button class="white55" style="border-radius:8px;">Pasta</button>
+         <button class="white55" style="border-radius:8px;">Pasta</button>
+         <button class="white55" style="border-radius:8px;">Pasta</button>
+         <button class="white55" style="border-radius:8px;">Pasta</button>
+            </div>
+         <div id="btns3">
+         <button class="white55" style="border-radius:8px;">Pizza</button>
+         <button class="white55" style="border-radius:8px;">Pizza</button>
+         <button class="white55" style="border-radius:8px;">Pizza</button>
+         <button class="white55" style="border-radius:8px;">Pizza</button>
+         <button class="white55" style="border-radius:8px;">Pizza</button><br />
+         <button class="white55" style="border-radius:8px;">Pizza</button>
+         <button class="white55" style="border-radius:8px;">Pizza</button>
+         <button class="white55" style="border-radius:8px;">Pizza</button>
+         <button class="white55" style="border-radius:8px;">Pizza</button>
+         <button class="white55" style="border-radius:8px;">Pizza</button><br />
+         <button class="white55" style="border-radius:8px;">Pizza</button>
+         <button class="white55" style="border-radius:8px;">Pizza</button>
+         <button class="white55" style="border-radius:8px;">Pizza</button>
+         <button class="white55" style="border-radius:8px;">Pizza</button>
+         <button class="white55" style="border-radius:8px;">Pizza</button><br />
+         <button class="white55" style="border-radius:8px;">Pizza</button>
+         <button class="white55" style="border-radius:8px;">Pizza</button>
+         <button class="white55" style="border-radius:8px;">Pizza</button>
+         <button class="white55" style="border-radius:8px;">Pizza</button>
+         <button class="white55" style="border-radius:8px;">Pizza</button>
+            </div>
+        <div id="btns4">
+         <button class="white55" style="border-radius:8px;">Soups</button>
+         <button class="white55" style="border-radius:8px;">Soups</button>
+         <button class="white55" style="border-radius:8px;">Soups</button>
+         <button class="white55" style="border-radius:8px;">Soups</button>
+         <button class="white55" style="border-radius:8px;">Soups</button><br />
+         <button class="white55" style="border-radius:8px;">Soups</button>
+         <button class="white55" style="border-radius:8px;">Soups</button>
+         <button class="white55" style="border-radius:8px;">Soups</button>
+         <button class="white55" style="border-radius:8px;">Soups</button>
+         <button class="white55" style="border-radius:8px;">Soups</button><br />
+         <button class="white55" style="border-radius:8px;">Soups</button>
+         <button class="white55" style="border-radius:8px;">Soups</button>
+         <button class="white55" style="border-radius:8px;">Soups</button>
+         <button class="white55" style="border-radius:8px;">Soups</button>
+         <button class="white55" style="border-radius:8px;">Soups</button><br />
+         <button class="white55" style="border-radius:8px;">Soups</button>
+         <button class="white55" style="border-radius:8px;">Soups</button>
+         <button class="white55" style="border-radius:8px;">Soups</button>
+         <button class="white55" style="border-radius:8px;">Soups</button>
+         <button class="white55" style="border-radius:8px;">Soups</button>
+            </div>
+    </div>
+      </div>
+  <a href="#"class="white5"style="margin-top:-100px;margin-left:135px;text-decoration:none;">Beverage</a>
+                <a href="#"class="white5"style="margin-top:-100px;margin-left:273px;text-decoration:none;">Marchandes</a>
+                  <a href="#"class="white5"style="margin-top:-100px;margin-left:412px;text-decoration:none;">Meal</a>
+                 <a href="#" class="white5"style="border-top-right-radius:15px;margin-top:-100px;margin-left:550px;text-decoration:none;">
+        <span class="glyphicon glyphicon-align-justify"></span>                       
+      </a>
+</div>
+          </div>
+   
+               </div>
+  </div>
+            </div>
+</body>
+</html>
